@@ -1,0 +1,86 @@
+body {
+    background: rgb(255, 173, 65);
+}
+.todo-container {
+    background: rgb(41, 33, 33);
+    /* width: 40vw; */
+    width: 60%;
+    margin: 10em auto;
+    border-radius: 15px;
+    padding: 20px 10px;
+    color: white;
+    border: 3px solid rgb(36, 110, 194);
+}
+.task {
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+.task button {
+    background: rgb(12, 124, 251);
+    border-radius: 5px;
+    margin: 0px 5px;
+    padding: 3px 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    float: right;
+}
+.header {
+    margin: 0.5em;
+    font-size: 2em;
+    text-align: center;
+}
+.create-task input[type=text] {
+    margin: 2.5em 2em;
+    width: 80%;
+    outline: none;
+    border: none;
+    padding: 0.7em;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.btn-styled {
+    padding: 8px;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+.btn-styled:hover {
+    cursor: pointer;
+    background: rgb(255, 173, 65);
+    color: #111;
+}
+.remove-item {
+    /* display: none; */
+    visibility: hidden;
+    background: red !important;
+    color: #111 !important;
+    font-size: 1rem !important;
+    z-index: 10 !important; 
+}
+.complete-item {
+    background: green !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+    z-index: 10 !important;
+}
+.task:hover .remove-item {
+    /* display: block; */
+    visibility: visible;
+    cursor: pointer;
+    background: cornsilk;
+    color: #111;
+    border: 1px solid #111;
+}
+.task:hover{
+    background: cornsilk;
+    color: #111;
+    border: 1px solid #111;
+}
